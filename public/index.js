@@ -81,7 +81,7 @@ class App extends React.Component {
         <ReactAntTreeSelect
           style={{ width: 200 }}
           items={this.state.items}
-          template={this.template}
+          // template={this.template}
         />
       </div>
     );

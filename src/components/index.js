@@ -7,6 +7,21 @@ import objectAssign from 'object-assign';
 import { TreeSelect } from 'antd';
 
 const CLASS_NAME = 'react-ant-tree-select';
+const RETURN_TEMPLATE = ({ item }, cb) => {
+  const { value, label } = item;
+  if (cb) {
+    return (
+      <TreeSelect.TreeNode
+        key={value}
+        value={value}
+        title={label}
+        children={cb()}
+      />
+    );
+  } else {
+    return <TreeSelect.TreeNode key={value} value={value} title={label} />;
+  }
+};
 
 export default class extends Component {
   static displayName = CLASS_NAME;
@@ -18,25 +33,33 @@ export default class extends Component {
 
   static defaultProps = {
     items: [],
-    template: noop
+    template: RETURN_TEMPLATE
   };
 
-  render() {
-    const {
-      className,
-      children,
-      items,
-      template,
-      directory,
-      ...props
-    } = this.props;
+  get childView() {
+    const { items, template } = this.props;
+    const walk = (inItems) => {
+      return inItems.map((item, index) => {
+        const { children } = item;
+        const cb = () => walk(children);
+        const hasChild = children && children.length;
+        const target = { item, index };
+        const args = hasChild ? [target, cb] : [target];
+        return template.apply(this, args);
+      });
+    };
+    return walk(items);
+  }
 
+  render() {
+    const { className, children, items, template, ...props } = this.props;
+    console.log('childView::->', this.childView);
     return (
       <TreeSelect
         data-component={CLASS_NAME}
         className={classNames(CLASS_NAME, className)}
         {...props}>
-        {template(items)}
+        {this.childView}
       </TreeSelect>
     );
   }
