@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-ant-tree-select",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Antd tree select wrapper for react.",
   "main": "dist/index.js",
   "scripts": {
