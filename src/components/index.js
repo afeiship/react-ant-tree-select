@@ -25,17 +25,22 @@ export default class extends Component {
   static propTypes = {
     className: PropTypes.string,
     items: PropTypes.array,
-    template: PropTypes.func.isRequired
+    template: PropTypes.func.isRequired,
+    itemsKey: PropTypes.oneOfType([
+       PropTypes.string,
+       PropTypes.func,
+    ])
   };
 
   static defaultProps = {
     items: [],
-    template: RETURN_TEMPLATE
+    template: RETURN_TEMPLATE,
+    itemsKey: 'children'
   };
 
   get childView() {
-    const { items, template } = this.props;
-    return nxTreeWalk(items, { template });
+    const { items, template, itemsKey } = this.props;
+    return nxTreeWalk(items, { template, itemsKey });
   }
 
   render() {
