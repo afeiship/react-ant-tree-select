@@ -6,11 +6,12 @@
 npm install -S @feizheng/react-ant-tree-select
 ```
 ## properties
-| property        | type | description |
-| --------------- | ---- | ----------- |
-| className       | -    | -           |
-| value           | -    | -           |
-| onChange        | -    | -           |
+| property  | type            | default    | description            |
+| --------- | --------------- | ---------- | ---------------------- |
+| className | String          | -          | The extended className |
+| items     | Array           | []         | The list data          |
+| template  | Function        | -          | The list template      |
+| itemsKey  | String/Function | 'children' | The list children key  |
 
 ## usage
 1. import css
