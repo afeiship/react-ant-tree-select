@@ -26,10 +26,7 @@ export default class extends Component {
     className: PropTypes.string,
     items: PropTypes.array,
     template: PropTypes.func.isRequired,
-    itemsKey: PropTypes.oneOfType([
-       PropTypes.string,
-       PropTypes.func,
-    ])
+    itemsKey: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
   };
 
   static defaultProps = {
@@ -44,7 +41,14 @@ export default class extends Component {
   }
 
   render() {
-    const { className, children, items, template, ...props } = this.props;
+    const {
+      className,
+      children,
+      items,
+      itemsKey,
+      template,
+      ...props
+    } = this.props;
     return (
       <TreeSelect
         data-component={CLASS_NAME}
