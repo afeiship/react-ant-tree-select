@@ -1,4 +1,4 @@
-import baseConfig from '.';
+import baseConfig from './base';
 import merge from 'webpack-merge';
 import {
   configs,
@@ -14,10 +14,9 @@ export default merge(baseConfig, {
   output: outputs.build({
     library: 'ReactAntTreeSelect'
   }),
-  externals: externals.base({
-    '@feizheng/noop': '@feizheng/noop',
-    '@feizheng/next-tree-walk':'@feizheng/next-tree-walk',
-    antd: 'antd'
-  }),
-  plugins: [plugins.clean(), plugins.copyStyles()]
+  externals: externals.node(),
+  plugins: [
+    plugins.clean(),
+    plugins.copyStyles()
+  ]
 });

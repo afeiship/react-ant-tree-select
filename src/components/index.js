@@ -20,13 +20,29 @@ const RETURN_TEMPLATE = ({ item }, cb) => {
   );
 };
 
-export default class extends Component {
+export default class ReactAntTreeSelect extends Component {
   static displayName = CLASS_NAME;
+  static version = '__VERSION__';
   static propTypes = {
+    /**
+     * The extended className for component.
+     */
     className: PropTypes.string,
+    /**
+     * Data source items(tree).
+     */
     items: PropTypes.array,
+    /**
+     * The items template.
+     */
     template: PropTypes.func.isRequired,
-    itemsKey: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+    /**
+     * Items key(default: children).
+     */
+    itemsKey: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.func
+    ])
   };
 
   static defaultProps = {

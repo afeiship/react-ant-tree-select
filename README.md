@@ -5,13 +5,20 @@
 ```shell
 npm install -S @feizheng/react-ant-tree-select
 ```
+
+## update
+```shell
+npm update @feizheng/react-ant-tree-select
+```
+
 ## properties
-| property  | type            | default    | description            |
-| --------- | --------------- | ---------- | ---------------------- |
-| className | String          | -          | The extended className |
-| items     | Array           | []         | The list data          |
-| template  | Function        | -          | The list template      |
-| itemsKey  | String/Function | 'children' | The list children key  |
+| Name      | Type   | Required | Default    | Description                           |
+| --------- | ------ | -------- | ---------- | ------------------------------------- |
+| className | string | false    | -          | The extended className for component. |
+| items     | array  | false    | []         | Data source items(tree).              |
+| template  | func   | false    | -          | The items template.                   |
+| itemsKey  | union  | false    | 'children' | Items key(default: children).         |
+
 
 ## usage
 1. import css
@@ -22,8 +29,8 @@ npm install -S @feizheng/react-ant-tree-select
   $react-ant-tree-select-options: ()
   ```
 2. import js
-  ```jsx
-  import ReactAntTreeSelect from '../src/main';
+  ```js
+  import ReactAntTreeSelect from '@feizheng/react-ant-tree-select';
   import ReactDOM from 'react-dom';
   import React from 'react';
   import { TreeSelect } from 'antd';
@@ -106,7 +113,7 @@ npm install -S @feizheng/react-ant-tree-select
           <ReactAntTreeSelect
             style={{ width: 200 }}
             items={this.state.items}
-            template={this.template}
+            // template={this.template}
           />
         </div>
       );
@@ -114,6 +121,7 @@ npm install -S @feizheng/react-ant-tree-select
   }
 
   ReactDOM.render(<App />, document.getElementById('app'));
+
   ```
 
 ## documentation
