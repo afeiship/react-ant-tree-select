@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
 import { TreeSelect } from 'antd';
-import nxTreeWalk from '@feizheng/next-tree-walk';
+import nxTreeWalk from '@jswork/next-tree-walk';
 
 const CLASS_NAME = 'react-ant-tree-select';
-const RETURN_TEMPLATE = ({ item }, cb) => {
+const DEFAULT_TEMPLATE = ({ item }, cb) => {
   const { value, label } = item;
   return (
     <TreeSelect.TreeNode
@@ -39,15 +36,12 @@ export default class ReactAntTreeSelect extends Component {
     /**
      * Items key(default: children).
      */
-    itemsKey: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.func
-    ])
+    itemsKey: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
   };
 
   static defaultProps = {
     items: [],
-    template: RETURN_TEMPLATE,
+    template: DEFAULT_TEMPLATE,
     itemsKey: 'children'
   };
 

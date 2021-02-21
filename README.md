@@ -1,14 +1,14 @@
 # react-ant-tree-select
 > Antd tree select wrapper for react.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
+
 ## installation
 ```shell
-npm install -S @feizheng/react-ant-tree-select
-```
-
-## update
-```shell
-npm update @feizheng/react-ant-tree-select
+npm install -S @jswork/react-ant-tree-select
 ```
 
 ## properties
@@ -23,17 +23,22 @@ npm update @feizheng/react-ant-tree-select
 ## usage
 1. import css
   ```scss
-  @import "~@feizheng/react-ant-tree-select/dist/style.scss";
+  @import "~@jswork/react-ant-tree-select/dist/style.css";
+
+  // or use sass
+  @import "~@jswork/react-ant-tree-select/dist/style.scss";
 
   // customize your styles:
   $react-ant-tree-select-options: ()
   ```
 2. import js
   ```js
-  import ReactAntTreeSelect from '@feizheng/react-ant-tree-select';
-  import ReactDOM from 'react-dom';
+  import ReactDemokit from '@jswork/react-demokit';
   import React from 'react';
+  import ReactDOM from 'react-dom';
+  import ReactAntTreeSelect from '@jswork/react-ant-tree-select';
   import { TreeSelect } from 'antd';
+
   import './assets/style.scss';
 
   class App extends React.Component {
@@ -109,13 +114,16 @@ npm update @feizheng/react-ant-tree-select
 
     render() {
       return (
-        <div className="app-container">
+        <ReactDemokit
+          className="p-3 app-container"
+          url="https://github.com/afeiship/react-ant-tree-select">
           <ReactAntTreeSelect
+            placeholder="Plealse select..."
             style={{ width: 200 }}
             items={this.state.items}
             // template={this.template}
           />
-        </div>
+        </ReactDemokit>
       );
     }
   }
@@ -126,3 +134,19 @@ npm update @feizheng/react-ant-tree-select
 
 ## documentation
 - https://afeiship.github.io/react-ant-tree-select/
+
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/react-ant-tree-select/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/react-ant-tree-select
+[version-url]: https://npmjs.org/package/@jswork/react-ant-tree-select
+
+[license-image]: https://img.shields.io/npm/l/@jswork/react-ant-tree-select
+[license-url]: https://github.com/afeiship/react-ant-tree-select/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-ant-tree-select
+[size-url]: https://github.com/afeiship/react-ant-tree-select/blob/master/dist/react-ant-tree-select.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-ant-tree-select
+[download-url]: https://www.npmjs.com/package/@jswork/react-ant-tree-select
