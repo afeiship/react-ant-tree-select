@@ -50,6 +50,11 @@ export default class ReactAntTreeSelect extends Component {
     return nxTreeWalk(items, { template, itemsKey });
   }
 
+  handleChange = (inValue) => {
+    const { onChange } = this.props;
+    onChange({ target: { value: inValue } });
+  };
+
   render() {
     const {
       className,
@@ -57,12 +62,14 @@ export default class ReactAntTreeSelect extends Component {
       items,
       itemsKey,
       template,
+      onChange,
       ...props
     } = this.props;
     return (
       <TreeSelect
         data-component={CLASS_NAME}
         className={classNames(CLASS_NAME, className)}
+        onChange={this.handleChange}
         {...props}>
         {this.childView}
       </TreeSelect>
