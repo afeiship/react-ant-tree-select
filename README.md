@@ -115,12 +115,15 @@ npm install -S @jswork/react-ant-tree-select
     render() {
       return (
         <ReactDemokit
-          className="p-3 app-container"
+          className="p-5 app-container"
           url="https://github.com/afeiship/react-ant-tree-select">
           <ReactAntTreeSelect
             placeholder="Plealse select..."
             style={{ width: 200 }}
             items={this.state.items}
+            onChange={(e) => {
+              console.log('value:', e.target.value);
+            }}
             // template={this.template}
           />
         </ReactDemokit>
