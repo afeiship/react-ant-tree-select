@@ -1,0 +1,284 @@
+[
+  {
+    "uuid": "070edacb771e7b50d4bbe2c810c0220d",
+    "title": "bbb1",
+    "value": "070edacb771e7b50d4bbe2c810c0220d",
+    "label": "bbb1",
+    "type": "catalogue",
+    "children": [
+      {
+        "uuid": "805c312a2ced60ea3b242468d0527bf7",
+        "name": "互动PPT课件",
+        "businessConfigUuid": "MIXED_COURSEWARE",
+        "contentCreatable": true,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "805c312a2ced60ea3b242468d0527bf7",
+        "label": "互动PPT课件"
+      },
+      {
+        "uuid": "13f25b3fa28ab9fc6c83b22f405bc98e",
+        "name": "常规练习",
+        "businessConfigUuid": "HOMEWORK",
+        "contentCreatable": false,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "13f25b3fa28ab9fc6c83b22f405bc98e",
+        "label": "常规练习"
+      }
+    ]
+  },
+  {
+    "uuid": "104284ae933d62265a41e98d319f2700",
+    "title": "bbb2",
+    "children": [
+      {
+        "uuid": "6613080871e1bfa1c5b257c322ebb47c",
+        "title": "aaaa333",
+        "value": "6613080871e1bfa1c5b257c322ebb47c",
+        "label": "aaaa333",
+        "type": "catalogue",
+        "children": [
+          {
+            "uuid": "d3fc8be154072931881d9f81b788df7e",
+            "name": "Wendytest",
+            "businessConfigUuid": "456",
+            "contentCreatable": true,
+            "displayStatus": "NORMAL",
+            "type": "business",
+            "value": "d3fc8be154072931881d9f81b788df7e",
+            "label": "Wendytest"
+          }
+        ]
+      }
+    ],
+    "value": "104284ae933d62265a41e98d319f2700",
+    "label": "bbb2",
+    "type": "catalogue"
+  },
+  {
+    "uuid": "536ea7cb303328ebf8c6006cf993885b",
+    "title": "b2",
+    "value": "536ea7cb303328ebf8c6006cf993885b",
+    "label": "b2",
+    "type": "catalogue",
+    "children": [
+      {
+        "uuid": "d2afa645ebba5fbcf2709ed1e5d66fda",
+        "name": "常规练习",
+        "businessConfigUuid": "HOMEWORK",
+        "contentCreatable": false,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "d2afa645ebba5fbcf2709ed1e5d66fda",
+        "label": "常规练习",
+        "children": [
+          {
+            "uuid": "6a6bbc902153e8635c595f0d2621cd6c",
+            "name": "未命名单元（Unit）",
+            "businessConfigUuid": "HOMEWORK",
+            "contentCreatable": false,
+            "level": 1,
+            "displayStatus": "NORMAL",
+            "type": "node",
+            "value": "6a6bbc902153e8635c595f0d2621cd6c",
+            "label": "未命名单元（Unit）",
+            "children": [
+              {
+                "uuid": "7171e54c5d1187ae7caf4a7f656715ca",
+                "name": "未命名题包（Package）",
+                "businessConfigUuid": "HOMEWORK",
+                "contentCreatable": true,
+                "level": 2,
+                "displayStatus": "NORMAL",
+                "type": "node",
+                "value": "7171e54c5d1187ae7caf4a7f656715ca",
+                "label": "未命名题包（Package）"
+              }
+            ]
+          },
+          {
+            "uuid": "389f047aeb071058fc52cd7dbd21ca6c",
+            "name": "未命名单元（Unit）",
+            "businessConfigUuid": "HOMEWORK",
+            "contentCreatable": false,
+            "level": 1,
+            "displayStatus": "NORMAL",
+            "type": "node",
+            "value": "389f047aeb071058fc52cd7dbd21ca6c",
+            "label": "未命名单元（Unit）"
+          }
+        ]
+      },
+      {
+        "uuid": "22079a7d5bcc6ceb91ad877aead8cd16",
+        "name": "互动PPT课件",
+        "businessConfigUuid": "MIXED_COURSEWARE",
+        "contentCreatable": true,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "22079a7d5bcc6ceb91ad877aead8cd16",
+        "label": "互动PPT课件"
+      }
+    ]
+  },
+  {
+    "uuid": "e42f5e4d8c8c21237bdd12f5303e8d2c",
+    "title": "b3",
+    "value": "e42f5e4d8c8c21237bdd12f5303e8d2c",
+    "label": "b3",
+    "type": "catalogue",
+    "children": [
+      {
+        "uuid": "786a78d18dc15678b9531a3da0e5ff47",
+        "name": "group 1",
+        "businessConfigUuid": "HOMEWORK",
+        "contentCreatable": false,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "786a78d18dc15678b9531a3da0e5ff47",
+        "label": "group 1",
+        "children": [
+          {
+            "uuid": "43ec3612459c508cb3ed705661db4387",
+            "name": "未命名单元（Unit 1）",
+            "businessConfigUuid": "HOMEWORK",
+            "contentCreatable": false,
+            "level": 1,
+            "displayStatus": "NORMAL",
+            "type": "node",
+            "value": "43ec3612459c508cb3ed705661db4387",
+            "label": "未命名单元（Unit 1）",
+            "children": [
+              {
+                "uuid": "1965a5eecdf782ce4db0ee2cbfe604fa",
+                "name": "未命名题包（Package 1）",
+                "businessConfigUuid": "HOMEWORK",
+                "contentCreatable": true,
+                "level": 2,
+                "displayStatus": "NORMAL",
+                "type": "node",
+                "value": "1965a5eecdf782ce4db0ee2cbfe604fa",
+                "label": "未命名题包（Package 1）"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e5cb46299b2ec18e471ecf2c332f1acd",
+        "name": "互动PPT课件",
+        "businessConfigUuid": "MIXED_COURSEWARE",
+        "contentCreatable": true,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "e5cb46299b2ec18e471ecf2c332f1acd",
+        "label": "互动PPT课件"
+      },
+      {
+        "uuid": "d388ef1f6266ba8b0f16ffa935822a4e",
+        "name": "Wendytest",
+        "businessConfigUuid": "456",
+        "contentCreatable": true,
+        "displayStatus": "NORMAL",
+        "type": "business",
+        "value": "d388ef1f6266ba8b0f16ffa935822a4e",
+        "label": "Wendytest"
+      }
+    ]
+  },
+  {
+    "uuid": "07f22ff37326a8c1f76e8c06e392ff1e",
+    "title": "test 4",
+    "children": [
+      {
+        "uuid": "0e491666efcf83b331091e6dd3dbfd1c",
+        "title": "test 004",
+        "value": "0e491666efcf83b331091e6dd3dbfd1c",
+        "label": "test 004",
+        "type": "catalogue",
+        "children": [
+          {
+            "uuid": "9eb3747da92a5b23fad99774495bc506",
+            "name": "互动PPT课件",
+            "businessConfigUuid": "MIXED_COURSEWARE",
+            "contentCreatable": true,
+            "displayStatus": "NORMAL",
+            "type": "business",
+            "value": "9eb3747da92a5b23fad99774495bc506",
+            "label": "互动PPT课件"
+          }
+        ]
+      }
+    ],
+    "value": "07f22ff37326a8c1f76e8c06e392ff1e",
+    "label": "test 4",
+    "type": "catalogue"
+  },
+  {
+    "uuid": "828c22201d29246be1de52d5a126cb8f",
+    "title": "test 5",
+    "children": [
+      {
+        "uuid": "2fab42480c2cad823d89f909a5d6d606",
+        "title": "test 005",
+        "value": "2fab42480c2cad823d89f909a5d6d606",
+        "label": "test 005",
+        "type": "catalogue",
+        "children": [
+          {
+            "uuid": "7f839f5df9339daf82fec2d46cd8ce27",
+            "name": "互动PPT课件",
+            "businessConfigUuid": "MIXED_COURSEWARE",
+            "contentCreatable": true,
+            "displayStatus": "NORMAL",
+            "type": "business",
+            "value": "7f839f5df9339daf82fec2d46cd8ce27",
+            "label": "互动PPT课件"
+          }
+        ]
+      }
+    ],
+    "value": "828c22201d29246be1de52d5a126cb8f",
+    "label": "test 5",
+    "type": "catalogue"
+  },
+  {
+    "uuid": "c34b043ad47bc0c5c5458ce7ba83a208",
+    "title": "test 6",
+    "children": [
+      {
+        "uuid": "ad95fc5cb0cadf0eeb4ef2eed7166bb7",
+        "title": "test 006",
+        "value": "ad95fc5cb0cadf0eeb4ef2eed7166bb7",
+        "label": "test 006",
+        "type": "catalogue",
+        "children": [
+          {
+            "uuid": "c647abbc9ccb8557219a2880d801152e",
+            "name": "互动PPT课件",
+            "businessConfigUuid": "MIXED_COURSEWARE",
+            "contentCreatable": true,
+            "displayStatus": "NORMAL",
+            "type": "business",
+            "value": "c647abbc9ccb8557219a2880d801152e",
+            "label": "互动PPT课件"
+          },
+          {
+            "uuid": "ca68d050d4a101aec1fa91da7b34d19b",
+            "name": "Wendytest",
+            "businessConfigUuid": "456",
+            "contentCreatable": true,
+            "displayStatus": "NORMAL",
+            "type": "business",
+            "value": "ca68d050d4a101aec1fa91da7b34d19b",
+            "label": "Wendytest"
+          }
+        ]
+      }
+    ],
+    "value": "c34b043ad47bc0c5c5458ce7ba83a208",
+    "label": "test 6",
+    "type": "catalogue"
+  }
+]

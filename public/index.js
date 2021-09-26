@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactAntTreeSelect from '../src/main';
 import { TreeSelect } from 'antd';
+import typedJson from './assets/test2.json';
+import nx from '@jswork/next';
 
 import './assets/style.scss';
 
@@ -10,6 +12,7 @@ class App extends React.Component {
   constructor(inProps) {
     super(inProps);
     this.state = {
+      items2: typedJson,
       items: [
         {
           label: '0-0',
@@ -56,25 +59,17 @@ class App extends React.Component {
     };
   }
 
-  template = (inData) => {
-    if (inData && inData.length) {
-      return inData.map((item) => {
-        const { label, value, ...itemProps } = item;
-        if (item.children) {
-          return (
-            <TreeSelect.TreeNode
-              title={label}
-              key={value}
-              value={value}
-              {...itemProps}>
-              {this.template(item.children)}
-            </TreeSelect.TreeNode>
-          );
-        }
-        return <TreeSelect.TreeNode title={label} key={value} value={value} />;
-      });
-    }
-    return null;
+  template = ({ item }, cb) => {
+    const { value, label } = item;
+    return (
+      <TreeSelect.TreeNode
+        key={value}
+        value={value}
+        title={label}
+        disabled={nx.get(item, 'contentCreatable') === false}
+        children={cb()}
+      />
+    );
   };
 
   render() {
@@ -84,12 +79,16 @@ class App extends React.Component {
         url="https://github.com/afeiship/react-ant-tree-select">
         <ReactAntTreeSelect
           placeholder="Plealse select..."
-          style={{ width: 200 }}
-          items={this.state.items}
+          treeNodeFilterProp="title"
+          allowClear
+          style={{ width: 400 }}
+          showSearch
+          treeDefaultExpandAll
+          items={this.state.items2}
           onChange={(e) => {
             console.log('value:', e.target.value);
           }}
-          // template={this.template}
+          template={this.template}
         />
       </ReactDemokit>
     );
