@@ -70,6 +70,7 @@ export default class ReactAntTreeSelect extends Component {
         data-component={CLASS_NAME}
         className={classNames(CLASS_NAME, className)}
         onChange={this.handleChange}
+        treeNodeFilterProp="title"
         {...props}>
         {this.childView}
       </TreeSelect>
