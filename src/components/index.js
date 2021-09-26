@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import noop from '@jswork/noop';
 import { TreeSelect } from 'antd';
 import nxTreeWalk from '@jswork/next-tree-walk';
 
@@ -42,7 +43,8 @@ export default class ReactAntTreeSelect extends Component {
   static defaultProps = {
     items: [],
     template: DEFAULT_TEMPLATE,
-    itemsKey: 'children'
+    itemsKey: 'children',
+    onChagne: noop,
   };
 
   get childView() {
