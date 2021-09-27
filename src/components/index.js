@@ -44,7 +44,7 @@ export default class ReactAntTreeSelect extends Component {
     items: [],
     template: DEFAULT_TEMPLATE,
     itemsKey: 'children',
-    onChagne: noop,
+    onChange: noop,
   };
 
   get childView() {
